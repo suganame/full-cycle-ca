@@ -1,0 +1,22 @@
+{
+  "name": "full-cycle-ca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "main": "tsc & node ./dist/main.js",
+    "test": "tsc & jest ./dist",
+    "express": "tsc & node ./dist/src/infra/http/express.js",
+    "hapi": "tsc & node ./dist/src/infra/http/hapi.js"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "express": "^4.18.1",
+    "pg-promise": "^10.11.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7"
+  }
+}
